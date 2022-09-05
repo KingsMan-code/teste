@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="50mm"
+   height="50mm"
+   viewBox="0 0 50 50"
+   version="1.1"
+   id="svg5"
+   sodipodi:docname="debito.svg"
+   inkscape:version="1.1 (c68e22c387, 2021-05-23)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview7"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:document-units="mm"
+     showgrid="false"
+     width="100mm"
+     inkscape:snap-text-baseline="false"
+     inkscape:zoom="2.8934906"
+     inkscape:cx="206.8436"
+     inkscape:cy="138.75974"
+     inkscape:window-width="1920"
+     inkscape:window-height="1001"
+     inkscape:window-x="-9"
+     inkscape:window-y="-9"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1" />
+  <defs
+     id="defs2">
+    <rect
+       x="1.9550278"
+       y="0.97751389"
+       width="188.66018"
+       height="189.6377"
+       id="rect15329" />
+    <rect
+       x="4.8875694"
+       y="2.9325416"
+       width="367.54523"
+       height="371.45529"
+       id="rect3679" />
+  </defs>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <circle
+       style="fill:#aa0000;stroke-width:1.52299;fill-opacity:1"
+       id="path56"
+       cy="25"
+       cx="25"
+       r="25" />
+    <text
+       xml:space="preserve"
+       transform="matrix(0.26458333,0,0,0.26458333,-0.78835468,4.8320028)"
+       id="text15327"
+       style="font-style:normal;font-weight:normal;font-size:117.333px;line-height:146.667px;font-family:sans-serif;text-align:center;white-space:pre;shape-inside:url(#rect15329);fill:#ffffff;fill-opacity:1;stroke:none"
+       x="4.96875"
+       y="0"><tspan
+         x="58.988387"
+         y="108.02339"
+         id="tspan61111">$</tspan></text>
+  </g>
+</svg>

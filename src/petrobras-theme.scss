@@ -1,0 +1,169 @@
+@import "@angular/material/theming";
+// Plus imports for other components in your app.
+
+// Include the common styles for Angular Material. We include this here so that you only
+// have to load a single css file for Angular Material in your app.
+// Be sure that you only ever include this mixin once!
+@include mat-core();
+
+$petrobras-green: (
+  400: #00b058,
+  500: #008542,
+  800: #0c3310,
+  contrast: (
+    400: $dark-primary-text,
+    500: $light-primary-text,
+    800: $light-primary-text,
+  ),
+);
+
+// Define the palettes for your theme using the Material Design palettes available in palette.scss
+// (imported above). For each palette, you can optionally specify a default, lighter, and darker
+// hue. Available color palettes: https://material.io/design/color/
+$petrobras-app-primary: mat-palette($petrobras-green, 500, 400, 800);
+$petrobras-app-accent: mat-palette($mat-cyan, 500, 300, 800);
+
+// The warn palette is optional (defaults to red).
+$petrobras-app-warn: mat-palette($mat-red);
+
+// Create the theme object (a Sass map containing all of the palettes).
+$petrobras-app-theme: mat-light-theme(
+  $petrobras-app-primary,
+  $petrobras-app-accent,
+  $petrobras-app-warn
+);
+
+// Include theme styles for core and each component used in your app.
+// Alternatively, you can import and @include the theme mixins for each component
+// that you are using.
+@include angular-material-theme($petrobras-app-theme);
+
+.small-label {
+  background-color: #dddddd;
+  border-radius: 10px;
+  padding: 1px 5px 1px 5px;
+  color: $dark-primary-text;
+  font-size: small;
+}
+
+.accent-color {
+  color: mat-color($petrobras-app-accent) !important;
+}
+
+.accent-bg-color {
+  background-color: mat-color($petrobras-app-accent) !important;
+  color: $light-primary-text;
+}
+
+.warn-color {
+  color: mat-color($petrobras-app-warn) !important;
+}
+
+.warn-bg-color {
+  background-color: mat-color($petrobras-app-warn) !important;
+  color: $light-primary-text !important;
+}
+
+.primary-bg-color {
+  background-color: mat-color($petrobras-app-primary) !important;
+  color: $light-primary-text !important;
+}
+
+.accent-bg-color {
+  background-color: mat-color($petrobras-app-accent) !important;
+  color: $light-primary-text !important;
+}
+
+.greyed-bg-color {
+  background-color: #bbb !important;
+  color: $dark-primary-text !important;
+}
+
+
+.mat-card-icon {
+  font-size: 36px;
+}
+
+.spin {
+  -webkit-animation: spin 2s infinite linear;
+  animation: spin 2s infinite linear;
+}
+
+.wiggle {
+  -webkit-animation: wiggle 0.5s infinite linear;
+  animation: wiggle 0.5s infinite linear;
+}
+
+.fabs {
+  position: fixed;
+  bottom: 40px;
+  right: 50px;
+}
+
+@-webkit-keyframes spin {
+  0% {
+    -webkit-transform: rotate(359deg);
+    transform: rotate(359deg);
+  }
+  100% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+}
+@keyframes spin {
+  0% {
+    -webkit-transform: rotate(359deg);
+    transform: rotate(359deg);
+  }
+  100% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+}
+
+@-webkit-keyframes wiggle {
+  0% {
+    -webkit-transform: rotate(10deg);
+    transform: rotate(10deg);
+    color: inherit;
+  }
+  25% {
+    -webkit-transform: rotate(-10deg);
+    transform: rotate(-10deg);
+  }
+  50% {
+    -webkit-transform: rotate(20deg);
+    transform: rotate(20deg);
+    color: mat-color($petrobras-app-warn, default);
+  }
+  75% {
+    -webkit-transform: rotate(-5deg);
+    transform: rotate(-5deg);
+  }
+  100% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+    color: inherit;
+  }
+}
+
+@keyframes wiggle {
+  0% {
+    transform: rotate(10deg);
+    color: inherit;
+  }
+  25% {
+    transform: rotate(-10deg);
+  }
+  50% {
+    transform: rotate(20deg);
+    color: mat-color($petrobras-app-warn, default);
+  }
+  75% {
+    transform: rotate(-5deg);
+  }
+  100% {
+    transform: rotate(0deg);
+    color: inherit;
+  }
+}

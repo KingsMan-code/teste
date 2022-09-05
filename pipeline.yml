@@ -1,0 +1,21 @@
+env:
+    AuthorizedGroups: GG_APPS_DEVOPS_ACESSODEV_ORS0_K8S
+    RegistryName: 'ecr'
+build:
+    node:
+        Name: ors0-frontend-angular
+        PackageJsonPath: .
+        UseYarn: False
+        PackageRestoreCommand: install        
+        SkipSonar: True
+    docker:
+        Repository: ors0
+        Name: ors0-frontend-angular
+        Dockerfile: ./Dockerfile      
+upload:
+    docker:
+
+deploy:
+  folder: TIC-CORP
+  job: ors0-aws@ors0-frontend-angular
+

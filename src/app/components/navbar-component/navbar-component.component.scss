@@ -1,0 +1,132 @@
+@import "../../../styles.scss";
+
+mat-toolbar {
+    // @extend .primary-bg-color;
+    background-color: #FFFFFF;
+    position: fixed;
+    // z-index: 1000;
+    top: 0;
+    width: 100%;  
+}
+
+.buttonSideBar {
+    // Implementar mudanca de cor junto com o botao logica deve conter o svg caminho ../../../assets/icons/menu.svg
+    border: 0;
+    cursor: pointer;
+    padding-bottom: 7px;
+}
+
+.title {
+    font-weight: bold;
+    font-family: "Petrobras Sans";
+    padding-left: 20px;
+    padding-bottom: 10px;
+}
+
+.estiloToolBar {
+    box-sizing: border-box;
+    flex-direction: row;
+    display: flex;
+    align-items: right;
+    border: 0;
+    cursor: pointer;
+    padding-left: 23%;
+    align-items: flex-start;
+    background: transparent;
+}
+
+.estilorotas {
+    font-weight: bold;
+    font-family: "Petrobras Sans";
+    padding-left: 15%;
+    padding-right: 5%;
+    font-size: 15px;
+}
+
+.divisao {
+    @extend .primary-bg-color;
+    height: 81%;
+    width: 0.5%;
+    font-size: 40px;
+    cursor: auto;
+    
+}
+
+.espaco {
+    padding-right: 30%;
+}
+
+.imagens {
+    padding-top: 0px;
+    cursor: pointer;
+    padding-left: 10%;
+}
+
+.petrobras {
+    background-image: url("../../../assets/icons/LogoPetrobras.svg"),
+        url("../../../assets/icons/Recorte1.svg");
+    background-size: 138px 50px, 270px, 150px !important;
+    background-repeat: no-repeat, no-repeat, no-repeat !important;
+    background-position: 97%, 104%, -30px, 150px;
+    cursor: pointer;
+}
+
+ng-sidebar-content {
+    border: 0;
+    cursor: pointer;
+    padding-bottom: 7px;
+}
+
+.teste {
+    background-color: yellow;
+    position: relative;
+    padding-right: 100px;
+    height: 80%;
+    cursor: pointer;
+    opacity: 0;
+}
+
+ng-sidebar-container {
+    height: 100%;
+    width: 100%;
+}
+
+
+
+::ng-deep .ng-sidebar {
+    background-color: #f4f4f4;
+    width: 300px;
+    padding: 2em 3em;
+    box-shadow: 0 0 2.5em rgba(85, 85, 85, 0.5)
+}
+
+
+
+.menu {
+    margin-top: 2em;
+    display: block;
+}
+
+
+
+.menu li {
+    margin-bottom: 15px;
+    
+}
+
+
+
+.menu li a {
+    display:block;
+    width: 100%
+}
+
+
+
+.teste {
+    height: 100%;
+    padding-top: 1%;
+    padding-left: 1%;
+    background: transparent;
+    border: 0;
+}
